@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 42.0, 85.0, 1112.0, 564.0 ],
+		"rect" : [ 42.0, 85.0, 1654.0, 773.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,28 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"extract" : 1,
+					"id" : "obj-12",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "bp.Reverb 1.maxpat",
+					"numinlets" : 4,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 1139.0, 418.0, 190.0, 116.0 ],
+					"varname" : "bp.Reverb 1",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"format" : 3,
 					"id" : "obj-10",
@@ -411,7 +433,7 @@
 				"box" : 				{
 					"fontsize" : 13.0,
 					"id" : "obj-26",
-					"items" : [ "VOICELAB", ",", "FaderPort" ],
+					"items" : "FaderPort",
 					"labelclick" : 1,
 					"maxclass" : "umenu",
 					"numinlets" : 1,
@@ -1046,22 +1068,39 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-12::obj-47" : [ "bypass", "bypass", 0 ],
 			"obj-114" : [ "controller", "controller", 0 ],
-			"obj-60" : [ "statusbyte", "statusbyte", 0 ],
+			"obj-109" : [ "pitch[1]", "pitch", 0 ],
+			"obj-97" : [ "pitch", "pitch", 0 ],
 			"obj-121" : [ "pressure[1]", "pressure", 0 ],
 			"obj-117" : [ "program", "program", 0 ],
-			"obj-115" : [ "value", "value", 0 ],
-			"obj-97" : [ "pitch", "pitch", 0 ],
-			"obj-109" : [ "pitch[1]", "pitch", 0 ],
-			"obj-108" : [ "pressure", "pressure", 0 ],
+			"obj-12::obj-28" : [ "Mix", "Mix", 0 ],
+			"obj-15" : [ "live.numbox", "live.numbox", 0 ],
 			"obj-1" : [ "databyte1", "databyte1", 0 ],
+			"obj-108" : [ "pressure", "pressure", 0 ],
+			"obj-115" : [ "value", "value", 0 ],
 			"obj-99" : [ "velocity", "velocity", 0 ],
+			"obj-12::obj-1" : [ "Time", "Time", 0 ],
+			"obj-12::obj-26" : [ "Reflections", "Reflections", 0 ],
 			"obj-126" : [ "value[1]", "value", 0 ],
 			"obj-50" : [ "databyte2", "databyte2", 0 ],
-			"obj-15" : [ "live.numbox", "live.numbox", 0 ]
+			"obj-12::obj-25" : [ "Cutoff", "Cutoff", 0 ],
+			"obj-60" : [ "statusbyte", "statusbyte", 0 ]
 		}
 ,
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "bp.Reverb 1.maxpat",
+				"bootpath" : "C74:/packages/Beap/clippings/BEAP/Effects",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "M4L.cross1~.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Tools resources",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0
 	}
 
