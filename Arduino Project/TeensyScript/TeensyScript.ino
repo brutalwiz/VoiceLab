@@ -28,13 +28,13 @@ void loop() {
   // only transmit MIDI messages if analog input changed
   sPrint(n0);
   sPrint(n1);
-  sPrint(n2);
-  sPrint(n3);
+  //sPrint(n2); REENABLE LATER
+  //sPrint(n3);  ...
   
   sendMidiData(20,n0,previousA0);
-  sendMidiData(21,n1,previousA1);
-  sendMidiData(22,n2,previousA2);
-  sendMidiData(23,n3,previousA3);
+  //sendMidiData(21,n1,previousA1); REENABLE LATER
+  //sendMidiData(22,n2,previousA2); ..
+  //sendMidiData(23,n3,previousA3); ..
 
   // MIDI Controllers should discard incoming MIDI messages.
   // http://forum.pjrc.com/threads/24179-Teensy-3-Ableton-Analog-CC-causes-midi-crash
