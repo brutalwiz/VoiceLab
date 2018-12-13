@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 77.0, 1446.0, 929.0 ],
+		"rect" : [ 354.0, 153.0, 1040.0, 794.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,14 +38,105 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"annotation" : "",
+					"fontsize" : 20.0,
+					"hint" : "",
+					"id" : "obj-14",
+					"maxclass" : "textedit",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 693.333354, 522.000016, 156.0, 50.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 214.666672, 25.666662, 86.833328, 29.999998 ],
+					"style" : "",
+					"text" : "Reverb"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 246.5, 411.5, 44.0, 47.0 ],
+					"presentation_rect" : [ 279.5, 416.5, 0.0, 0.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.dial[2]",
+							"parameter_shortname" : "live.dial[5]",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
+						}
+
+					}
+,
+					"varname" : "live.dial[7]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 195.5, 411.5, 44.0, 47.0 ],
+					"presentation_rect" : [ 209.5, 411.5, 0.0, 0.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.dial[1]",
+							"parameter_shortname" : "live.dial[5]",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
+						}
+
+					}
+,
+					"varname" : "live.dial[6]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 142.5, 411.5, 44.0, 47.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.dial[5]",
+							"parameter_shortname" : "live.dial[5]",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
+						}
+
+					}
+,
+					"varname" : "live.dial[5]"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-63",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1177.5, 428.5, 44.0, 47.0 ],
-					"presentation_rect" : [ 1177.5, 428.5, 0.0, 0.0 ],
+					"patching_rect" : [ 950.833313, 252.5, 44.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 404.166626, 64.333328, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Reverb Diffusion",
@@ -69,8 +160,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1097.5, 428.5, 44.0, 47.0 ],
-					"presentation_rect" : [ 1106.5, 424.5, 0.0, 0.0 ],
+					"patching_rect" : [ 870.833374, 252.5, 44.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 353.500031, 64.333328, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Reverb Damping",
@@ -94,12 +186,13 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1048.5, 425.5, 44.0, 47.0 ],
-					"presentation_rect" : [ 1073.0, 423.5, 0.0, 0.0 ],
+					"patching_rect" : [ 821.833374, 249.5, 44.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 303.5, 64.333328, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Reverb Decay",
-							"parameter_shortname" : "Decay Time",
+							"parameter_shortname" : "Decay",
 							"parameter_type" : 0,
 							"parameter_mmax" : 10000.0,
 							"parameter_unitstyle" : 2
@@ -119,7 +212,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 996.0, 425.5, 44.0, 47.0 ],
+					"patching_rect" : [ 769.333374, 249.5, 44.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 257.5, 64.333328, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Reverb Size",
@@ -142,7 +237,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 1031.5, 553.0, 61.0, 22.0 ],
+					"patching_rect" : [ 804.833374, 377.0, 61.0, 22.0 ],
 					"style" : "",
 					"text" : "yafr2"
 				}
@@ -200,7 +295,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 564.5, 189.0, 113.0, 22.0 ],
-									"presentation_rect" : [ 564.5, 192.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "scale 0 127 0. 100."
 								}
@@ -215,7 +309,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 564.5, 386.5, 30.0, 30.0 ],
-									"presentation_rect" : [ 564.5, 389.5, 0.0, 0.0 ],
 									"style" : ""
 								}
 
@@ -228,7 +321,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 439.5, 189.0, 113.0, 22.0 ],
-									"presentation_rect" : [ 439.5, 192.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "scale 0 127 0. 100."
 								}
@@ -243,7 +335,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 439.5, 386.5, 30.0, 30.0 ],
-									"presentation_rect" : [ 439.5, 389.5, 0.0, 0.0 ],
 									"style" : ""
 								}
 
@@ -256,7 +347,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 319.5, 189.0, 113.0, 22.0 ],
-									"presentation_rect" : [ 319.5, 191.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "scale 0 127 0. 100."
 								}
@@ -271,7 +361,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 319.5, 386.5, 30.0, 30.0 ],
-									"presentation_rect" : [ 319.5, 388.5, 0.0, 0.0 ],
 									"style" : ""
 								}
 
@@ -502,7 +591,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 816.0, 379.0, 44.0, 47.0 ],
+					"patching_rect" : [ 686.666687, 187.0, 44.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 211.5, 64.333328, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Reverb Mix",
@@ -607,7 +698,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 418.0, 535.0, 30.0, 30.0 ],
-									"presentation_rect" : [ 418.0, 534.0, 0.0, 0.0 ],
 									"style" : ""
 								}
 
@@ -621,7 +711,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 382.0, 535.0, 30.0, 30.0 ],
-									"presentation_rect" : [ 382.0, 534.0, 0.0, 0.0 ],
 									"style" : ""
 								}
 
@@ -635,7 +724,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 241.0, 535.0, 30.0, 30.0 ],
-									"presentation_rect" : [ 241.0, 535.0, 0.0, 0.0 ],
 									"style" : ""
 								}
 
@@ -1005,7 +1093,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 772.0, 506.0, 62.0, 22.0 ],
+					"patching_rect" : [ 642.666687, 314.0, 62.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1650,7 +1738,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1055.5, 749.0, 45.0, 45.0 ],
+					"patching_rect" : [ 808.833374, 495.666656, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -1665,20 +1753,20 @@
 								"loop" : 1,
 								"content_state" : 								{
 									"mode" : [ "basic" ],
-									"originallengthms" : [ 0.0 ],
-									"followglobaltempo" : [ 0 ],
-									"slurtime" : [ 0.0 ],
 									"originaltempo" : [ 120.0 ],
-									"formant" : [ 1.0 ],
-									"pitchshift" : [ 1.0 ],
-									"play" : [ 0 ],
-									"basictuning" : [ 440 ],
 									"timestretch" : [ 0 ],
-									"speed" : [ 1.0 ],
 									"quality" : [ "basic" ],
+									"followglobaltempo" : [ 0 ],
+									"play" : [ 0 ],
+									"pitchcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
 									"originallength" : [ 0.0, "ticks" ],
-									"formantcorrection" : [ 0 ],
-									"pitchcorrection" : [ 0 ]
+									"slurtime" : [ 0.0 ],
+									"basictuning" : [ 440 ],
+									"speed" : [ 1.0 ],
+									"originallengthms" : [ 0.0 ],
+									"pitchshift" : [ 1.0 ],
+									"formantcorrection" : [ 0 ]
 								}
 
 							}
@@ -1931,8 +2019,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-57", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-57", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-53", 2 ],
 					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-57", 3 ]
 				}
 
 			}
@@ -1980,25 +2089,28 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-4" : [ "live.dial[5]", "live.dial[5]", 0 ],
+			"obj-52::obj-108" : [ "pressure", "pressure", 0 ],
 			"obj-52::obj-114" : [ "controller", "controller", 0 ],
-			"obj-61" : [ "Reverb Decay", "Decay Time", 0 ],
+			"obj-6" : [ "live.dial[2]", "live.dial[5]", 0 ],
 			"obj-52::obj-99" : [ "velocity", "velocity", 0 ],
-			"obj-53::obj-71" : [ "live.gain~[31]", "live.gain~[6]", 0 ],
-			"obj-62" : [ "Reverb Damping", "Damping", 0 ],
-			"obj-52::obj-97" : [ "pitch", "pitch", 0 ],
-			"obj-53::obj-140" : [ "live.gain~[32]", "Dry", 0 ],
-			"obj-52::obj-126" : [ "value[1]", "value", 0 ],
+			"obj-61" : [ "Reverb Decay", "Decay", 0 ],
+			"obj-52::obj-15" : [ "live.numbox", "live.numbox", 0 ],
 			"obj-53::obj-139" : [ "live.dial[7]", "live.dial", 0 ],
 			"obj-52::obj-115" : [ "value", "value", 0 ],
-			"obj-54" : [ "Reverb Mix", "Mix", 0 ],
-			"obj-63" : [ "Reverb Diffusion", "Diffusion", 0 ],
-			"obj-53::obj-141" : [ "live.gain~[25]", "Wet", 0 ],
-			"obj-52::obj-15" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-52::obj-117" : [ "program", "program", 0 ],
 			"obj-52::obj-121" : [ "pressure[1]", "pressure", 0 ],
+			"obj-52::obj-126" : [ "value[1]", "value", 0 ],
+			"obj-5" : [ "live.dial[1]", "live.dial[5]", 0 ],
 			"obj-52::obj-109" : [ "pitch[1]", "pitch", 0 ],
+			"obj-53::obj-71" : [ "live.gain~[31]", "live.gain~[6]", 0 ],
+			"obj-53::obj-140" : [ "live.gain~[32]", "Dry", 0 ],
+			"obj-52::obj-97" : [ "pitch", "pitch", 0 ],
+			"obj-62" : [ "Reverb Damping", "Damping", 0 ],
 			"obj-60" : [ "Reverb Size", "Size", 0 ],
-			"obj-52::obj-108" : [ "pressure", "pressure", 0 ]
+			"obj-52::obj-117" : [ "program", "program", 0 ],
+			"obj-53::obj-141" : [ "live.gain~[25]", "Wet", 0 ],
+			"obj-54" : [ "Reverb Mix", "Mix", 0 ],
+			"obj-63" : [ "Reverb Diffusion", "Diffusion", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
