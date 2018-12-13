@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 42.0, 85.0, 1654.0, 773.0 ],
+		"rect" : [ 142.0, 155.0, 1263.0, 815.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
 					"extract" : 1,
-					"id" : "obj-12",
+					"id" : "obj-38",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "bp.Reverb 1.maxpat",
@@ -52,9 +52,60 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 1139.0, 418.0, 190.0, 116.0 ],
+					"patching_rect" : [ 980.0, 128.0, 190.0, 116.0 ],
 					"varname" : "bp.Reverb 1",
 					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "ezdac~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1089.0, 272.0, 45.0, 45.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"data" : 					{
+						"clips" : [ 							{
+								"filename" : "cherokee.aif",
+								"filekind" : "audiofile",
+								"selection" : [ 0.0, 1.0 ],
+								"loop" : 0,
+								"content_state" : 								{
+									"mode" : [ "basic" ],
+									"play" : [ 0 ],
+									"quality" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"speed" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
+									"basictuning" : [ 440 ],
+									"originallengthms" : [ 0.0 ],
+									"pitchshift" : [ 1.0 ],
+									"formantcorrection" : [ 0 ],
+									"originaltempo" : [ 120.0 ],
+									"timestretch" : [ 0 ],
+									"followglobaltempo" : [ 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"id" : "obj-19",
+					"maxclass" : "playlist~",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+					"patching_rect" : [ 980.0, 32.0, 150.0, 30.0 ],
+					"style" : ""
 				}
 
 			}
@@ -147,7 +198,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 492.75, 418.0, 65.0, 23.0 ],
+					"patching_rect" : [ 492.75, 418.0, 67.0, 23.0 ],
 					"style" : "",
 					"text" : "unpack i i"
 				}
@@ -162,7 +213,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 580.75, 418.0, 65.0, 23.0 ],
+					"patching_rect" : [ 580.75, 418.0, 67.0, 23.0 ],
 					"style" : "",
 					"text" : "unpack i i"
 				}
@@ -177,7 +228,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 669.916626, 418.0, 65.0, 23.0 ],
+					"patching_rect" : [ 669.916626, 418.0, 67.0, 23.0 ],
 					"style" : "",
 					"text" : "unpack i i"
 				}
@@ -411,7 +462,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 136.0, 25.0, 58.0, 22.0 ],
+					"patching_rect" : [ 136.0, 25.0, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -454,7 +505,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 136.0, 105.0, 55.0, 23.0 ],
+					"patching_rect" : [ 136.0, 105.0, 57.0, 23.0 ],
 					"style" : "",
 					"text" : "midiinfo"
 				}
@@ -467,7 +518,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "int", "int" ],
-					"patching_rect" : [ 136.0, 287.0, 65.0, 22.0 ],
+					"patching_rect" : [ 136.0, 287.0, 69.0, 22.0 ],
 					"style" : "",
 					"text" : "unpack i i i"
 				}
@@ -480,7 +531,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 136.0, 227.0, 42.0, 22.0 ],
+					"patching_rect" : [ 136.0, 227.0, 44.0, 22.0 ],
 					"style" : "",
 					"text" : "thresh"
 				}
@@ -493,7 +544,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 136.0, 181.0, 40.0, 22.0 ],
+					"patching_rect" : [ 136.0, 181.0, 44.0, 22.0 ],
 					"style" : "",
 					"text" : "midiin"
 				}
@@ -913,6 +964,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-38", 0 ],
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"order" : 1,
 					"source" : [ "obj-2", 0 ]
@@ -967,6 +1025,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 1 ],
+					"source" : [ "obj-38", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-38", 0 ]
 				}
 
 			}
@@ -1068,27 +1140,33 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-12::obj-47" : [ "bypass", "bypass", 0 ],
+			"obj-50" : [ "databyte2", "databyte2", 0 ],
+			"obj-15" : [ "live.numbox", "live.numbox", 0 ],
 			"obj-114" : [ "controller", "controller", 0 ],
-			"obj-109" : [ "pitch[1]", "pitch", 0 ],
-			"obj-97" : [ "pitch", "pitch", 0 ],
+			"obj-38::obj-25" : [ "Cutoff", "Cutoff", 0 ],
 			"obj-121" : [ "pressure[1]", "pressure", 0 ],
 			"obj-117" : [ "program", "program", 0 ],
-			"obj-12::obj-28" : [ "Mix", "Mix", 0 ],
-			"obj-15" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-1" : [ "databyte1", "databyte1", 0 ],
+			"obj-60" : [ "statusbyte", "statusbyte", 0 ],
+			"obj-38::obj-1" : [ "Time", "Time", 0 ],
 			"obj-108" : [ "pressure", "pressure", 0 ],
 			"obj-115" : [ "value", "value", 0 ],
+			"obj-38::obj-28" : [ "Mix", "Mix", 0 ],
 			"obj-99" : [ "velocity", "velocity", 0 ],
-			"obj-12::obj-1" : [ "Time", "Time", 0 ],
-			"obj-12::obj-26" : [ "Reflections", "Reflections", 0 ],
+			"obj-1" : [ "databyte1", "databyte1", 0 ],
 			"obj-126" : [ "value[1]", "value", 0 ],
-			"obj-50" : [ "databyte2", "databyte2", 0 ],
-			"obj-12::obj-25" : [ "Cutoff", "Cutoff", 0 ],
-			"obj-60" : [ "statusbyte", "statusbyte", 0 ]
+			"obj-109" : [ "pitch[1]", "pitch", 0 ],
+			"obj-38::obj-47" : [ "bypass", "bypass", 0 ],
+			"obj-38::obj-26" : [ "Reflections", "Reflections", 0 ],
+			"obj-97" : [ "pitch", "pitch", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "cherokee.aif",
+				"bootpath" : "C74:/media/msp",
+				"type" : "AIFF",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "bp.Reverb 1.maxpat",
 				"bootpath" : "C74:/packages/Beap/clippings/BEAP/Effects",
 				"type" : "JSON",
