@@ -38,6 +38,31 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-79",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 885.75, 7.0, 72.0, 22.0 ],
+					"style" : "",
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-76",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 247.0, 334.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-42",
 					"maxclass" : "number",
 					"numinlets" : 1,
@@ -201,7 +226,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1239.0, 262.0, 150.0, 60.0 ],
+					"patching_rect" : [ 1239.0, 262.0, 150.0, 62.0 ],
 					"style" : "",
 					"text" : "//TODO: Nicht auf null setzen, wenn Preset 2 ausgewählt und preset 1 gecleared wird"
 				}
@@ -216,7 +241,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 823.0, 89.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "2"
+					"text" : "1"
 				}
 
 			}
@@ -384,7 +409,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 931.5, 10.0, 150.0, 20.0 ],
+					"patching_rect" : [ 971.5, 10.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "Preset/Bank Management"
 				}
@@ -459,7 +484,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u467000376"
+					"varname" : "u196000377"
 				}
 
 			}
@@ -478,7 +503,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u656000378"
+					"varname" : "u420000379"
 				}
 
 			}
@@ -497,7 +522,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u703000380"
+					"varname" : "u979000381"
 				}
 
 			}
@@ -516,7 +541,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u841000382"
+					"varname" : "u229000383"
 				}
 
 			}
@@ -535,7 +560,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u677000384"
+					"varname" : "u904000385"
 				}
 
 			}
@@ -554,7 +579,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u272000386"
+					"varname" : "u993000387"
 				}
 
 			}
@@ -573,7 +598,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u451000388"
+					"varname" : "u363000389"
 				}
 
 			}
@@ -592,7 +617,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u456000390"
+					"varname" : "u230000391"
 				}
 
 			}
@@ -1873,8 +1898,8 @@
 					"id" : "obj-57",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
+					"numoutlets" : 5,
+					"outlettype" : [ "", "", "", "", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -1912,8 +1937,33 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-14",
+									"index" : 5,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 692.0, 386.5, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-10",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 692.0, 189.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "if $i1 == 100 then b"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-26",
 									"maxclass" : "number",
@@ -2112,6 +2162,13 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"source" : [ "obj-1", 4 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-16", 0 ],
 									"order" : 0,
 									"source" : [ "obj-1", 0 ]
@@ -2171,6 +2228,13 @@
 									"destination" : [ "obj-6", 0 ],
 									"order" : 0,
 									"source" : [ "obj-1", 3 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"source" : [ "obj-10", 0 ]
 								}
 
 							}
@@ -3406,21 +3470,21 @@
 								"selection" : [ 0.0, 1.0 ],
 								"loop" : 1,
 								"content_state" : 								{
-									"originallengthms" : [ 0.0 ],
 									"mode" : [ "basic" ],
-									"quality" : [ "basic" ],
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"basictuning" : [ 440 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ],
-									"pitchcorrection" : [ 0 ],
 									"formant" : [ 1.0 ],
 									"originaltempo" : [ 120.0 ],
 									"play" : [ 0 ],
 									"slurtime" : [ 0.0 ],
 									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ]
+									"speed" : [ 1.0 ],
+									"originallengthms" : [ 0.0 ],
+									"followglobaltempo" : [ 0 ],
+									"timestretch" : [ 0 ],
+									"quality" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"pitchshift" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ]
 								}
 
 							}
@@ -3533,7 +3597,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 12.5, 17.5, 230.5, 412.0 ],
+					"patching_rect" : [ 12.5, 17.5, 291.5, 410.5 ],
 					"proportion" : 0.5,
 					"style" : ""
 				}
@@ -3957,7 +4021,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
-					"midpoints" : [ 132.5, 321.0, 94.5, 321.0 ],
+					"midpoints" : [ 128.25, 321.0, 94.5, 321.0 ],
 					"source" : [ "obj-57", 1 ]
 				}
 
@@ -3973,7 +4037,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"midpoints" : [ 149.5, 273.0, 148.75, 273.0 ],
+					"midpoints" : [ 141.0, 321.0, 148.75, 321.0 ],
 					"source" : [ "obj-57", 2 ]
 				}
 
@@ -3989,8 +4053,16 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 166.5, 321.0, 198.5, 321.0 ],
+					"midpoints" : [ 153.75, 321.0, 198.5, 321.0 ],
 					"source" : [ "obj-57", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-76", 0 ],
+					"midpoints" : [ 166.5, 321.0, 256.5, 321.0 ],
+					"source" : [ "obj-57", 4 ]
 				}
 
 			}
@@ -4150,6 +4222,21 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-67", 0 ],
+					"midpoints" : [ 256.5, 360.0, 600.0, 360.0, 600.0, 51.0, 840.0, 51.0, 840.0, 45.0, 863.5, 45.0 ],
+					"source" : [ "obj-76", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 0 ],
+					"source" : [ "obj-79", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
 					"order" : 1,
 					"source" : [ "obj-8", 0 ]
@@ -4180,37 +4267,37 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-7::obj-139" : [ "live.dial[3]", "live.dial", 0 ],
-			"obj-60" : [ "Reverb Size", "Size", 0 ],
-			"obj-52::obj-121" : [ "pressure[1]", "pressure", 0 ],
-			"obj-52::obj-109" : [ "pitch[1]", "pitch", 0 ],
 			"obj-52::obj-114" : [ "controller", "controller", 0 ],
-			"obj-63" : [ "Reverb Diffusion", "Diffusion", 0 ],
-			"obj-54" : [ "Reverb Mix", "Mix", 0 ],
-			"obj-11" : [ "DelayTime", "Delay Time", 0 ],
-			"obj-27" : [ "Chorus Delay Length[1]", "Delay Length", 0 ],
-			"obj-7::obj-71" : [ "live.gain~[1]", "live.gain~[6]", 0 ],
-			"obj-8" : [ "Chorus Mix[1]", "Mix", 0 ],
-			"obj-53::obj-71" : [ "live.gain~[31]", "live.gain~[6]", 0 ],
-			"obj-7::obj-141" : [ "live.gain~[2]", "Wet", 0 ],
-			"obj-52::obj-99" : [ "velocity", "velocity", 0 ],
-			"obj-52::obj-15" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-4" : [ "live.dial[5]", "live.dial[5]", 0 ],
-			"obj-52::obj-126" : [ "value[1]", "value", 0 ],
-			"obj-52::obj-115" : [ "value", "value", 0 ],
 			"obj-53::obj-140" : [ "live.gain~[32]", "Dry", 0 ],
-			"obj-52::obj-117" : [ "program", "program", 0 ],
-			"obj-7::obj-140" : [ "live.gain~[3]", "Dry", 0 ],
-			"obj-52::obj-108" : [ "pressure", "pressure", 0 ],
-			"obj-52::obj-97" : [ "pitch", "pitch", 0 ],
-			"obj-53::obj-139" : [ "live.dial[7]", "live.dial", 0 ],
-			"obj-5" : [ "live.dial[1]", "live.dial[5]", 0 ],
-			"obj-13" : [ "live.dial[10]", "Chorus Depth", 0 ],
-			"obj-53::obj-141" : [ "live.gain~[25]", "Wet", 0 ],
-			"obj-12" : [ "live.dial[9]", "Chorus Rate", 0 ],
 			"obj-62" : [ "Reverb Damping", "Damping", 0 ],
+			"obj-52::obj-108" : [ "pressure", "pressure", 0 ],
+			"obj-52::obj-126" : [ "value[1]", "value", 0 ],
+			"obj-52::obj-117" : [ "program", "program", 0 ],
 			"obj-6" : [ "live.dial[2]", "live.dial[5]", 0 ],
-			"obj-61" : [ "Reverb Decay", "Decay", 0 ]
+			"obj-5" : [ "live.dial[1]", "live.dial[5]", 0 ],
+			"obj-52::obj-115" : [ "value", "value", 0 ],
+			"obj-52::obj-99" : [ "velocity", "velocity", 0 ],
+			"obj-27" : [ "Chorus Delay Length[1]", "Delay Length", 0 ],
+			"obj-53::obj-141" : [ "live.gain~[25]", "Wet", 0 ],
+			"obj-52::obj-121" : [ "pressure[1]", "pressure", 0 ],
+			"obj-11" : [ "DelayTime", "Delay Time", 0 ],
+			"obj-60" : [ "Reverb Size", "Size", 0 ],
+			"obj-7::obj-141" : [ "live.gain~[2]", "Wet", 0 ],
+			"obj-52::obj-97" : [ "pitch", "pitch", 0 ],
+			"obj-63" : [ "Reverb Diffusion", "Diffusion", 0 ],
+			"obj-53::obj-139" : [ "live.dial[7]", "live.dial", 0 ],
+			"obj-54" : [ "Reverb Mix", "Mix", 0 ],
+			"obj-13" : [ "live.dial[10]", "Chorus Depth", 0 ],
+			"obj-53::obj-71" : [ "live.gain~[31]", "live.gain~[6]", 0 ],
+			"obj-12" : [ "live.dial[9]", "Chorus Rate", 0 ],
+			"obj-52::obj-109" : [ "pitch[1]", "pitch", 0 ],
+			"obj-7::obj-140" : [ "live.gain~[3]", "Dry", 0 ],
+			"obj-8" : [ "Chorus Mix[1]", "Mix", 0 ],
+			"obj-7::obj-71" : [ "live.gain~[1]", "live.gain~[6]", 0 ],
+			"obj-4" : [ "live.dial[5]", "live.dial[5]", 0 ],
+			"obj-61" : [ "Reverb Decay", "Decay", 0 ],
+			"obj-52::obj-15" : [ "live.numbox", "live.numbox", 0 ],
+			"obj-7::obj-139" : [ "live.dial[3]", "live.dial", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
