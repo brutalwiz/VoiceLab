@@ -5,12 +5,12 @@
 //Setup Button
 int freezeTaste = LOW;
 int freezeTasteAlt = LOW;
-int freezeTastePin = 2;
+int freezeTastePin = 11;
 bool freeze = false;
 
 int bankTaste = LOW;
 int bankTasteAlt = LOW;
-int bankTastePin = 3;
+int bankTastePin = 10;
 
 //Setup FSR
 int previousA0 = -1; // store previously sent values, to detect changes
@@ -39,13 +39,15 @@ void loop() {
 
   //BankButton pressed
     if(bankTaste==LOW && bankTasteAlt == HIGH){
-      usbMIDI.sendNoteOn(36, 100, 1); //36 = Note C1, Velocity 100
+      usbMIDI.sendNoteOn(36, 0, 1); //36 = Note C1, Velocity 100
+      Serial.println("ON");
     bankTasteAlt=bankTaste;
   }
 
   //BankButton Released
   if(bankTaste==HIGH && bankTasteAlt == LOW){
-    usbMIDI.sendNoteOn(36, 0, 1); //36 = Note C1, Velocity 100
+    usbMIDI.sendNoteOn(36, 100, 1); //36 = Note C1, Velocity 100
+    Serial.println("OFF");
     bankTasteAlt=bankTaste;
   }
 
@@ -73,8 +75,7 @@ void loop() {
     n2 = analogRead(druckKnopfRing)/8;
     n3 = analogRead(druckKnopfKlein)/8;
     // only transmit MIDI messages if analog input changed
-    sPrint(n0);
-
+    
     sendMidiData(20,n0,previousA0);
     sendMidiData(21,n1,previousA1);
     sendMidiData(22,n2,previousA2); 

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 570.0, 209.0, 330.0, 590.0 ],
+		"rect" : [ 300.0, 102.0, 330.0, 590.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -49,7 +49,8 @@
 					"bgfillcolor_pt2" : [ 0.539604, -0.086957 ],
 					"bgfillcolor_type" : "color",
 					"elementcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
-					"fontsize" : 20.0,
+					"fontname" : "Ginora Sans",
+					"fontsize" : 18.0,
 					"id" : "obj-101",
 					"items" : [ "Bank", 1, ",", "Bank", 2, ",", "Bank", 3, ",", "Bank", 4 ],
 					"maxclass" : "umenu",
@@ -57,9 +58,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 333.666687, 614.0, 100.0, 31.0 ],
+					"patching_rect" : [ 333.666687, 614.0, 100.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 207.0, 25.0, 101.5, 31.0 ],
+					"presentation_rect" : [ 207.0, 25.0, 101.5, 29.0 ],
 					"style" : "",
 					"textcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ]
 				}
@@ -483,9 +484,10 @@
 					"bgfillcolor_pt2" : [ 0.539604, -0.086957 ],
 					"bgfillcolor_type" : "color",
 					"elementcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
+					"fontname" : "Ginora Sans",
 					"fontsize" : 14.0,
 					"id" : "obj-78",
-					"items" : [ "Reverb", ",", "Delay", ",", "Chorus" ],
+					"items" : [ "Delay", ",", "Reverb", ",", "Chrous" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -511,9 +513,10 @@
 					"bgfillcolor_pt2" : [ 0.539604, -0.086957 ],
 					"bgfillcolor_type" : "color",
 					"elementcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
+					"fontname" : "Ginora Sans",
 					"fontsize" : 14.0,
 					"id" : "obj-77",
-					"items" : [ "Reverb", ",", "Delay", ",", "Chorus" ],
+					"items" : [ "Chorus", ",", "Reverb", ",", "Delay" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -539,6 +542,7 @@
 					"bgfillcolor_pt2" : [ 0.539604, -0.086957 ],
 					"bgfillcolor_type" : "color",
 					"elementcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
+					"fontname" : "Ginora Sans",
 					"fontsize" : 14.0,
 					"id" : "obj-75",
 					"items" : [ "Reverb", ",", "Delay", ",", "Chorus" ],
@@ -974,7 +978,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u228002966"
+					"varname" : "u168004023"
 				}
 
 			}
@@ -993,7 +997,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u277002968"
+					"varname" : "u637004025"
 				}
 
 			}
@@ -1012,7 +1016,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u791002970"
+					"varname" : "u613004027"
 				}
 
 			}
@@ -1031,7 +1035,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u001002972"
+					"varname" : "u505004029"
 				}
 
 			}
@@ -1050,7 +1054,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u077002974"
+					"varname" : "u404004031"
 				}
 
 			}
@@ -1069,7 +1073,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u753002976"
+					"varname" : "u883004033"
 				}
 
 			}
@@ -1088,7 +1092,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u017002978"
+					"varname" : "u951004035"
 				}
 
 			}
@@ -1107,7 +1111,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u190002980"
+					"varname" : "u155004037"
 				}
 
 			}
@@ -4894,8 +4898,8 @@
 			"obj-63" : [ "Reverb Diffusion", "Diffusion", 0 ],
 			"obj-52::obj-97" : [ "pitch", "pitch", 0 ],
 			"obj-53::obj-140" : [ "live.gain~[32]", "Dry", 0 ],
-			"obj-62" : [ "Reverb Damping", "Damping", 0 ],
 			"obj-89" : [ "live.dial[12]", "Rate", 0 ],
+			"obj-62" : [ "Reverb Damping", "Damping", 0 ],
 			"obj-61" : [ "Reverb Decay", "Decay", 0 ],
 			"obj-27" : [ "Chorus Delay Length[1]", "Length", 0 ],
 			"obj-53::obj-139" : [ "live.dial[7]", "live.dial", 0 ],
@@ -4917,20 +4921,20 @@
 			"obj-52::obj-109" : [ "pitch[1]", "pitch", 0 ],
 			"obj-52::obj-121" : [ "pressure[1]", "pressure", 0 ],
 			"obj-53::obj-141" : [ "live.gain~[25]", "Wet", 0 ],
-			"obj-85" : [ "Chorus Mix[2]", "Mix", 0 ],
 			"obj-60" : [ "Reverb Size", "Size", 0 ],
+			"obj-85" : [ "Chorus Mix[2]", "Mix", 0 ],
 			"obj-6" : [ "live.dial[2]", "live.dial[5]", 0 ],
 			"obj-52::obj-126" : [ "value[1]", "value", 0 ],
-			"obj-5" : [ "live.dial[1]", "live.dial[5]", 0 ],
 			"obj-92" : [ "DelayTime[2]", "Min", 0 ],
+			"obj-5" : [ "live.dial[1]", "live.dial[5]", 0 ],
 			"obj-52::obj-15" : [ "live.numbox", "live.numbox", 0 ],
 			"obj-7::obj-141" : [ "live.gain~[2]", "Wet", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "interface.png",
-				"bootpath" : "~/Documents/VoiceLab/VoiceLab/Max Patch",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/VoiceLab/VoiceLab/VideoProject/Video/media",
+				"patcherrelativepath" : "../media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
@@ -4942,8 +4946,8 @@
 			}
 , 			{
 				"name" : "yafr2.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/examples/effects/reverb/lib",
-				"patcherrelativepath" : "../../../../../../ProgramData/Max 7/examples/effects/reverb/lib",
+				"bootpath" : "~/Documents/VoiceLab/VoiceLab/VideoProject/Video/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
