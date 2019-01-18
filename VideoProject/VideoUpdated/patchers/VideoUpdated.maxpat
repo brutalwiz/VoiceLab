@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 0.0, 43.0, 1920.0, 997.0 ],
+		"rect" : [ 485.0, 180.0, 330.0, 589.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -974,7 +974,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u269000419"
+					"varname" : "u188000756"
 				}
 
 			}
@@ -993,7 +993,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u681000421"
+					"varname" : "u843000758"
 				}
 
 			}
@@ -1012,7 +1012,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u989000423"
+					"varname" : "u592000760"
 				}
 
 			}
@@ -1031,7 +1031,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u619000425"
+					"varname" : "u330000762"
 				}
 
 			}
@@ -1050,7 +1050,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u427000427"
+					"varname" : "u392000764"
 				}
 
 			}
@@ -1069,7 +1069,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u532000429"
+					"varname" : "u590000766"
 				}
 
 			}
@@ -1088,7 +1088,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u161000431"
+					"varname" : "u474000768"
 				}
 
 			}
@@ -1107,7 +1107,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u749000433"
+					"varname" : "u635000770"
 				}
 
 			}
@@ -4883,8 +4883,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-60" : [ "Reverb Size", "Size", 0 ],
 			"obj-88" : [ "live.dial[11]", "Depth", 0 ],
+			"obj-60" : [ "Reverb Size", "Size", 0 ],
 			"obj-52::obj-117" : [ "program", "program", 0 ],
 			"obj-52::obj-114" : [ "controller", "controller", 0 ],
 			"obj-91" : [ "Chorus Delay Length[3]", "Max", 0 ],
@@ -4929,8 +4929,8 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "interface.png",
-				"bootpath" : "~/Documents/VoiceLab/VoiceLab/Max Patch",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/VoiceLab/VoiceLab/VideoProject/VideoUpdated/media",
+				"patcherrelativepath" : "../media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
@@ -4942,8 +4942,8 @@
 			}
 , 			{
 				"name" : "yafr2.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/examples/effects/reverb/lib",
-				"patcherrelativepath" : "../../../../../../ProgramData/Max 7/examples/effects/reverb/lib",
+				"bootpath" : "~/Documents/VoiceLab/VoiceLab/VideoProject/VideoUpdated/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
